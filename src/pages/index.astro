@@ -1,8 +1,8 @@
 ---
-import '../styles/global.css';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import ServicioCard from '../components/ServicioCard.astro';
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ServicioCard from "../components/ServicioCard.astro";
 ---
 
 <html lang="es">
@@ -10,7 +10,29 @@ import ServicioCard from '../components/ServicioCard.astro';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aldhineo Traslados - Traslados turísticos desde Purmamarca</title>
-    <meta name="description" content="Aldhineo Traslados ofrece viajes turísticos seguros desde Purmamarca a Humahuaca, Hornocal, Salinas Grandes, Iruya, Maimará, Tilcara y al aeropuerto.">
+    <!-- SEO -->
+    <meta
+    name="description"
+    content="Aldhineo Traslados ofrece viajes turísticos y traslados privados desde Purmamarca a Humahuaca, Hornocal, Salinas Grandes, Tilcara, Iruya y el aeropuerto. Servicio seguro, puntual y personalizado en Jujuy."
+    />
+
+    <meta
+      name="keywords"
+      content="traslados Purmamarca, viajes turísticos Jujuy, Humahuaca, Hornocal, Salinas Grandes, Iruya, Maimará, Tilcara, aeropuerto"
+    />
+    <meta name="author" content="Aldhineo Traslados" />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Aldhineo Traslados - Traslados turísticos desde Purmamarca"
+    />
+    <meta
+      property="og:description"
+      content="Viajes seguros desde Purmamarca a Humahuaca, Hornocal, Salinas Grandes, Iruya, Maimará, Tilcara y al aeropuerto. Reserva online fácil y rápido."
+    />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tusitio.com/" />
   </head>
 
   <body>
@@ -20,27 +42,56 @@ import ServicioCard from '../components/ServicioCard.astro';
       <!-- INICIO -->
       <section id="inicio" style="padding:4rem 2rem; text-align:center;">
         <h2>Bienvenido a Aldhineo Traslados</h2>
-        <p>Tu servicio de traslados turísticos en el corazón de la Quebrada de Humahuaca.</p>
+        <p>
+          Tu servicio de traslados turísticos en el corazón de la Quebrada de
+          Humahuaca.
+        </p>
         <button class="boton-reserva">Reservar Ahora</button>
       </section>
 
       <!-- DESTINOS -->
       <section id="destinos" class="seccion-servicios">
-        <ServicioCard titulo="Humahuaca" descripcion="Disfrutá un viaje cómodo desde Purmamarca hasta Humahuaca." />
-        <ServicioCard titulo="Hornocal" descripcion="Conocé el cerro de los 14 colores con traslados seguros." />
-        <ServicioCard titulo="Salinas Grandes" descripcion="Viaje turístico a las Salinas Grandes desde Purmamarca." />
-        <ServicioCard titulo="Iruya" descripcion="Traslados cómodos a Iruya, para explorar sus paisajes únicos." />
-        <ServicioCard titulo="Maimará" descripcion="Visita Maimará y su famosa paleta de colores." />
-        <ServicioCard titulo="Tilcara" descripcion="Traslado a Tilcara, incluyendo el Pucará y otros sitios." />
-        <ServicioCard titulo="Aeropuerto" descripcion="Servicio seguro al aeropuerto desde Purmamarca." />
+        <ServicioCard
+          titulo="Humahuaca"
+          descripcion="Disfrutá un viaje cómodo desde Purmamarca hasta Humahuaca."
+        />
+        <ServicioCard
+          titulo="Hornocal"
+          descripcion="Conocé el cerro de los 14 colores con traslados seguros."
+        />
+        <ServicioCard
+          titulo="Salinas Grandes"
+          descripcion="Viaje turístico a las Salinas Grandes desde Purmamarca."
+        />
+        <ServicioCard
+          titulo="Iruya"
+          descripcion="Traslados cómodos a Iruya, para explorar sus paisajes únicos."
+        />
+        <ServicioCard
+          titulo="Maimará"
+          descripcion="Visita Maimará y su famosa paleta de colores."
+        />
+        <ServicioCard
+          titulo="Tilcara"
+          descripcion="Traslado a Tilcara, incluyendo el Pucará y otros sitios."
+        />
+        <ServicioCard
+          titulo="Aeropuerto"
+          descripcion="Servicio seguro al aeropuerto desde Purmamarca."
+        />
       </section>
 
       <!-- QUIÉNES SOMOS -->
-      <section id="quienes-somos" style="padding:4rem 2rem; background-color:var(--color-contraste); text-align:center;">
+      <section
+        id="quienes-somos"
+        style="padding:4rem 2rem; background-color:var(--color-contraste); text-align:center;"
+      >
         <h2>Quiénes Somos</h2>
         <p>
-          En <strong>Aldhineo Traslados</strong> somos una empresa familiar de Purmamarca dedicada a ofrecer servicios de transporte turístico personalizados.
-          Nuestro compromiso es brindarte seguridad, puntualidad y una experiencia inolvidable recorriendo los destinos más hermosos del norte argentino.
+          En <strong>Aldhineo Traslados</strong> somos una empresa familiar de Purmamarca
+          dedicada a ofrecer servicios de transporte turístico personalizados. Nuestro
+          compromiso es brindarte seguridad, puntualidad y una experiencia inolvidable
+          recorriendo los destinos más hermosos del norte argentino.
         </p>
       </section>
     </main>
