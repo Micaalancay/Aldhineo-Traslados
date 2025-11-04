@@ -1,4 +1,21 @@
+---
+const links = [
+  { nombre: "Inicio", href: "#inicio" },
+  { nombre: "Destinos", href: "#destinos" },
+  { nombre: "Quiénes Somos", href: "#quienes-somos" }
+];
+---
+
 <header>
-  <h1>Aldhineo Traslados</h1>
-  <p>Traslados seguros y confiables</p>
+  <nav class="navbar">
+    <div class="logo">
+      <h1>Aldhineo Traslados</h1>
+    </div>
+
+    <ul class="nav-links">
+      {links.map(link => (
+        <li><a href={link.href}>{link.nombre}</a></li>
+      ))}
+    </ul>
+  </nav>
 </header>
