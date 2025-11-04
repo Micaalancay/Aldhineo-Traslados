@@ -1,0 +1,126 @@
+/* =====================================
+   Variables de color y tipografía
+===================================== */
+:root {
+  --color-primario: #1D3557;      /* Azul profundo - botones y títulos */
+  --color-fondo: #F1FAEE;         /* Arena clara - fondo general */
+  --color-detalle: #457B9D;       /* Verde oliva - tarjetas y hover */
+  --color-contraste: #A8DADC;     /* Celeste suave - hover y fondos alternativos */
+  --color-texto: #2A2A2A;         /* Gris oscuro - texto principal */
+  --color-blanco: #FFFFFF;        /* Blanco limpio - textos sobre fondos oscuros */
+  
+  --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =====================================
+   Reset y base
+===================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+/* =====================================
+   Header
+===================================== */
+header {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* =====================================
+   Botones
+===================================== */
+.boton-reserva {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton-reserva:hover {
+  background-color: var(--color-detalle);
+  transform: translateY(-2px);
+}
+
+/* =====================================
+   Sección de servicios / Destinos
+===================================== */
+.seccion-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+  background-color: var(--color-contraste);
+}
+
+.servicio-card {
+  background-color: var(--color-blanco);
+  color: var(--color-texto);
+  padding: 1.5rem;
+  border-radius: 12px;
+  flex: 1 1 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.servicio-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.servicio-card p {
+  font-size: 1rem;
+}
+
+/* =====================================
+   Footer
+===================================== */
+footer {
+  background-color: var(--color-texto);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* =====================================
+   Responsivo
+===================================== */
+@media (max-width: 768px) {
+  .seccion-servicios {
+    flex-direction: column;
+    align-items: center;
+  }
+}
